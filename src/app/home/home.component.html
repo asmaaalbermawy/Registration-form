@@ -1,0 +1,197 @@
+﻿<!---<h1 style="margin-top: 100px; color: rgb(39, 39, 56); ">
+    <i class="fas fa-user-astronaut" style="color:blue; margin-right: 16px"></i> {{currentUser.firstName}}!
+</h1>
+
+<h3>Those are : All registered users:</h3>
+<ul>
+ <li *ngFor="let user of users">
+ {{user.username}} ({{user.firstName}} {{user.lastName}}) - <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
+ </li>
+</ul>
+<button class="btn btn-danger" (click)="logout() ">Logout</button>-->
+
+<!---<div class="list-group" style="margin-top: 20px;margin-bottom: 300px;">
+    <button type="button" class="list-group-item list-group-item-action active" style="font-size:x-large">
+      Items List
+    </button>
+    <button type="button" class="list-group-item list-group-item-action "> Item 1 <span class="badge badge-primary badge-pill"style="margin-left:35em">New</span>
+    </button>
+    <button type="button" class="list-group-item list-group-item-action">Item2 <span class="badge badge-primary badge-pill"style="margin-left:35em;">10 piece</span></button>
+    <button type="button" class="list-group-item list-group-item-action">Item3 <span class="badge badge-primary badge-pill" style="margin-left:35em">2 piece</span> </button>
+    <button type="button" class="list-group-item list-group-item-action">Item4 <span class="badge badge-primary badge-pill" style="margin-left:35em">New</span></button>
+    <a routerLink="/register" class="list-group-item list-group-item-action">Item4 <span class="badge badge-primary badge-pill"style="margin-left:35em">15 piece</span></a>
+
+
+</div>-->
+<section id="content" style="margin-top: 60px">
+
+    <div class="content-wrap">
+
+        <div class="container clearfix">
+
+
+            <!---- addition code
+
+            <div class="postcontent  clearfix left">
+
+                <h3>Standard</h3>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, nulla, distinctio animi impedit repellendus dolores natus cumque libero est saepe accusantium aliquam id laudantium eaque atque cupiditate hic odio voluptatum nobis omnis
+                    harum perferendis facere obcaecati at ullam? Pariatur, magnam.</p>
+
+                <div class="divider"><i class="icon-circle"></i></div>
+            </div>
+
+            end of it-->
+
+            <div class="form-widget" style="width: 880px; padding-right: 20px;margin-bottom:200px; ">
+
+
+                <div class="form-result"></div>
+                <div class="row shadow bg-light border">
+
+
+                    <!----<div class="col-lg-4 dark" style="background: linear-gradient(rgba(0, 15, 56, 0.8), rgba(46, 91, 187, 0.2)), url('https://images.unsplash.com/photo-1511809870860-4d2806eb1908?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80') center center / cover; min-height: 400px;">-->
+                    <div class="col-lg-4 dark" style="background: url('images/10.png'); width: 180px">
+
+
+                        <div class="calories-wrap center w-100 px-2">
+                            <!--  <span class="uppercase mb-0 ls2">Loosing Fat</span>-->
+                            <h2 id="calories-count" class="calories display-3 mb-2 heading-block nobottomborder t600 font-body py-2"></h2>
+                            <!-- <span class="uppercase h6 ls3">Estimated Calories</span>-->
+                        </div>
+                        <!----   <small class="center m-0 position-absolute" style="bottom: 12px;font-weight: bold;font-size:large">Happy fot your visit</small>-->
+                    </div>
+
+                    <div class="col-lg-8 p-5" style="background-color:rgba(221, 212, 212, 0.9); ">
+                        <form class="row mb-0" id="fitness-form" action="include/form.php" method="post" enctype="multipart/form-data">
+                            <div class="form-process"></div>
+                            <div class="col-12 form-group">
+                                <div class="row">
+                                    <div class="col-sm-2 col-form-label">
+                                        <label for="fitness-form-name" style="color:black; font-size: large">Name:</label>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <input type="text" name="fitness-form-name" id="fitness-form-name" class="form-control required" value="" placeholder="Enter your Full Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 form-group">
+                                <div class="row">
+                                    <div class="col-sm-2 col-form-label">
+                                        <label for="fitness-form-email" style="color:black; font-size: large">Email:</label>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <input type="email" name="fitness-form-email" id="fitness-form-email" class="form-control required" value="" placeholder="Enter your Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 form-group">
+                                <div class="row">
+                                    <div class="col-sm-2 col-form-label">
+                                        <label for="fitness-form-phone" style="color: black; font-size: large">Phone:</label>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <input type="text" name="fitness-form-phone" id="fitness-form-phone" class="form-control required" value="" placeholder="Your Contact Number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 form-group">
+                                <div class="row">
+                                    <div class="col-sm-2 col-form-label">
+                                        <label for="fitness-form-phone" style="color:black; font-size: large">Your Goal:</label>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <div class="btn-group btn-group-toggle d-flex" data-toggle="buttons">
+                                            <label class="btn btn-outline-dark font-body ls0 nott">
+                        <input type="radio" class="required form-control" name="fitness-form-goal" id="fitness-form-weight-loss" value="Weight Loss">Weight Loss
+                      </label>
+                                            <label class="btn btn-outline-dark font-body ls0 nott">
+                        <input type="radio" class="required form-control" name="fitness-form-goal" id="fitness-form-mass-gain" value="Mass Gain">Mass Gain
+                      </label>
+                                            <label class="btn btn-outline-dark font-body ls0 nott">
+                        <input type="radio" class="required form-control" name="fitness-form-goal" id="fitness-form-athletic-body" value="Athletic Body">Athletic Body
+                      </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 form-group">
+                                <div class="row">
+                                    <div class="col-sm-2 col-form-label">
+                                        <label for="fitness-form-sex" style="color: black; font-size: large ">Gender:</label>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="btn-group btn-group-toggle d-flex" data-toggle="buttons">
+                                            <label class="btn btn-outline-dark font-body ls0 nott">
+                                                <input type="radio" class="required form-control" name="fitness-form-sex" id="fitness-form-male" value="Male">Male
+                                            </label>
+                                            <label class="btn btn-outline-dark font-body ls0 nott">
+                                                <input type="radio" class="required form-control" name="fitness-form-sex" id="fitness-form-male" value="Female">Female
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 form-group ">
+                                <div class="row ">
+                                    <div class="col-sm-2 col-form-label ">
+                                        <label for="fitness-form-age " style="color: black; font-size: large ">Age:</label>
+                                    </div>
+                                    <div class="col-sm-5 ">
+                                        <input type="number " min="10 " max="50 " name="fitness-form-age " id="fitness-form-age " class="form-control required " value=" " placeholder="Enter your Age ">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 form-group ">
+                                <div class="row ">
+                                    <div class="col-sm-2 col-form-label ">
+                                        <label for="fitness-form-weight " style="color:black; font-size: large ">Weight:</label>
+                                    </div>
+                                    <div class="col-sm-5 ">
+                                        <div class="input-group ">
+                                            <input type="number " max="140 " name="fitness-form-weight " id="fitness-form-weight " class="form-control required " value=" " placeholder="Enter your Weight ">
+                                            <div class="input-group-append ">
+                                                <span class="input-group-text bg-white ">kgs</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 form-group ">
+                                <div class="row ">
+                                    <div class="col-sm-2 col-form-label ">
+                                        <label for="fitness-form-height " style="color: black; font-size: large ">Height:</label>
+                                    </div>
+                                    <div class="col-sm-5 ">
+                                        <div class="input-group ">
+                                            <input type="number " maxlength="3 " name="fitness-form-height " id="fitness-form-height " class="form-control required " value=" " placeholder="Enter your height ">
+                                            <div class="input-group-append ">
+                                                <span class="input-group-text bg-white ">cm</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-secondary  btn-lg btn-block" style="font-size: x-large; margin-top: 19px">Submit</button>
+
+                                </div>
+                            </div>
+
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+</section>
+<!-- #content end -->
